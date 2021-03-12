@@ -1,0 +1,91 @@
+#hypertree .content{padding:0}
+#infovis{
+    background:radial-gradient(circle at 50vh 50vh, #ffc 0%, #fff 70%);
+    height:calc(100vh - 70px);
+    width :calc(100vh - 70px)
+}
+#main h1{font-size:2em;line-height:.8em}
+#main h1 small{font-size:.5em}
+
+.vocab-list,
+.vocab-list ul{padding:0;margin:0}
+.vocab-list li{list-style:none;padding:0 0 1em 0;margin:0;}
+.vocab-list a{font-weight:bold}
+
+.aside{padding:10px;width:320px;box-sizing:border-box}
+.aside .info{color:green;display:block;position:relative;z-index:1}
+
+#editing ul{margin:0;padding:0}
+#editing li{list-style:none;margin:0;padding:0}
+#editing form input{padding:3px;font-size:13px}
+#editing form .title{margin-bottom:0}
+#editing form .node_id{margin-top:0}
+#editing form .node_id label{display:inline}
+#editing form .node_id input{display:inline-block;width:128px;border:0;border-bottom:1px dashed #ddd;color:#999;font-size:.8em;background:none;border-radius:0}
+
+#tagging #editing{position:static;height:auto;margin:0 auto}
+#indicator{float:right}
+
+form .buttons{text-align:right}
+form label{display:block;text-align:left;font-size:10px;padding:2px}
+form ul{padding:0}
+form li{list-style:none;text-shadow:none}
+#editicons{margin:.0;text-align:center;font-size:14px}
+#editicons b{font-size:25px}
+#editicons i{cursor:pointer;font-family:arial,sans-serif;font-style:normal;color:#d33;padding:1px 5px}
+#editicons i:hover{color:#111}
+#infovis .node{text-shadow:#fff 1px 1px 0;padding:.3em 0.6em;color:#333;border-radius:3px}
+#infovis .vocabnode{color:#333}
+#infovis .node:hover{background-color:rgba(255,255,255,.9);cursor:pointer;z-index:1000 !important}
+#infovis .node-depth-0:hover,
+#infovis .node-depth-0{font-size:1.5em;cursor:default;border-radius:5px}
+#infovis .node-depth-1{opacity:.9;font-size:1.2em}
+#infovis .node-depth-2{opacity:.7;font-size:1em}
+#infovis .node,
+#infovis .node-depth-0{background-color:rgba(255,255,255,.5);}
+
+.drop-nav{position:absolute;z-index:999;top:0;padding:1em;color:gray;border-radius:10px}
+.drop-nav__head{cursor:pointer;font-size:smaller;padding-left:1em}
+.drop-nav__head .icon-caret{position:relative;top:2px}
+.drop-nav ul{list-style:none;display:none;padding:1em;border-radius:4px;
+    background:#fff;box-shadow:0 0 20px rgba(0,0,0,.3)}
+.drop-nav li{padding-bottom:5px}
+.drop-nav a{text-decoration:none}
+.drop-nav a:hover{text-decoration:underline}
+
+#editing input[type="checkbox"]{width:auto}
+#editing .set{padding:10px 20px 10px 30px;position:relative;left:-30px}
+#editing .set,
+.dynamic-form{width:100%}
+.dynamic-form{border-top:2px solid #000}
+
+#add_operator,
+.test{font-weight:bold;font-size:14px;text-decoration:none}
+#panel a{text-decoration:none}
+#panel a:hover{text-decoration:underline}
+#panel .indent{padding-left:22px;margin-top:0}
+
+.set li{border-top:1px solid #eee}
+.set .delete-row{color:#ddd;font-size:17px}
+
+#id_description{font-family:Arial, sans-serif;padding:2px 1px;height:60px;font-size:12px}
+
+.has_query:before{content:'✓ '}
+.try{font-size:12px}
+
+#add_operator:hover,
+.test:hover,
+p:hover .add,
+button i,
+button b{color:#cfc}
+button.delete i,
+button.delete b{color:#fcc;position:relative;top:-1px}
+#results{display:none}
+.add-row{text-decoration:none}
+
+@media screen and (min-width:800px){
+	.aside{padding:25px;background:#f3f3f3;float:left}
+	#infovis{float:left}
+	.vocab-list{column-count:3;column-gap:2rem}
+	.col2 .vocab-list{column-count:1}
+}
